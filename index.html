@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data: https: http:; default-src 'self' https://cdnjs.cloudflare.com; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com;">
+    <title>Professional T-Shirt Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container"></div>
+    <header>
+        <nav>
+            <div class="logo animate__animated animate__fadeIn">T-Shirt Pro</div>
+            <ul class="animate__animated animate__fadeIn">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#designer">Designer</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1 class="animate__animated animate__fadeInDown">Create Your Perfect T-Shirt</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Unleash your creativity with our professional T-shirt designer</p>
+            <a href="#designer" class="cta-button animate__animated animate__fadeInUp animate__delay-2s">Start Designing</a>
+        </section>
+
+        <section id="designer" class="designer-section">
+            <div class="designer-container">
+                <div class="tshirt-preview animate__animated animate__fadeIn">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&h=600" alt="T-Shirt" id="tshirt" crossorigin="anonymous">
+                    <img src="" alt="User Design" id="design" class="design-overlay" crossorigin="anonymous">
+                </div>
+                <div class="design-controls animate__animated animate__fadeIn animate__delay-1s">
+                    <h2>Customize Your Design</h2>
+                    <div class="control-group">
+                        <label for="size">Size:</label>
+                        <input type="range" id="size" min="10" max="100" value="50">
+                    </div>
+                    <div class="control-group">
+                        <label for="x-position">Horizontal Position:</label>
+                        <input type="range" id="x-position" min="0" max="100" value="50">
+                    </div>
+                    <div class="control-group">
+                        <label for="y-position">Vertical Position:</label>
+                        <input type="range" id="y-position" min="0" max="100" value="50">
+                    </div>
+                    <div class="control-group">
+                        <label for="upload" class="upload-btn">Upload Design</label>
+                        <input type="file" id="upload" accept="image/*">
+                    </div>
+                    <button id="download" class="download-btn">Download Preview</button>
+                </div>
+            </div>
+            <div class="sample-designs">
+                <h3>Sample Designs</h3>
+                <div class="sample-grid">
+                    <img src="https://images.unsplash.com/photo-1516876437184-593fda40c7ce?auto=format&fit=crop&w=200&h=200" alt="Sample Design 1" class="sample-design" crossorigin="anonymous">
+                    <img src="https://images.unsplash.com/photo-1517722014278-c256a91a6fba?auto=format&fit=crop&w=200&h=200" alt="Sample Design 2" class="sample-design" crossorigin="anonymous">
+                    <img src="https://images.unsplash.com/photo-1519055548599-6d4d129508c4?auto=format&fit=crop&w=200&h=200" alt="Sample Design 3" class="sample-design" crossorigin="anonymous">
+                    <img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?auto=format&fit=crop&w=200&h=200" alt="Sample Design 4" class="sample-design" crossorigin="anonymous">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 T-Shirt Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
